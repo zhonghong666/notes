@@ -21,6 +21,16 @@ let second = 10;
 
 const thrid = 20; //不能被修改
 
+//创建函数也相当于在创建变量
+function fun() {}
+//创建类也相当于创建变量
+class A {}
+//ES6的模板导入也可以创建变量
+import B from './B.js';
+//Symbol创建唯一值
+let num = Symbol(100);
+let aount = Symbol(100);
+console.log(num == aount); //false
 
 ```
 
