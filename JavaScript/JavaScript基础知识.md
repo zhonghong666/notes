@@ -1,4 +1,4 @@
-# JS做客户端语言
+# JavaScript基本语法
 
 > 按照相关JS语法去操作页面中动元素，有时还要操作浏览器里面的一些功能
 
@@ -34,3 +34,39 @@ console.log(num == aount); //false
 
 ```
 
+#### 总结
+
+- var 会发生变量提升，其他声明方式不会
+
+  ```javascript
+  console.log(a); //undefined
+  var a = 5;
+  console.log(a); //5
+  ```
+
+  上面代码等价于：
+
+  ```javascript
+  var a;
+  console.log(a); //undefined
+  a = 5;
+  console.log(a); //5
+  ```
+
+  javascript引擎会把所有通过var声明的变量进行变量提升，即对变量声明的语句提升到代码头部
+
+- Symbol 声明的变量是唯一的，即使里面的值是一样的，他们在内存中的地址是不一样的
+
+## 数据类型
+
+- 原始数据类型（primitive type）
+  - number
+  - string
+  - boolean
+  - bigInt
+  - symbol
+  - null
+  - undefined
+- 合成数据类型（complex type）
+  - object
+  - function
